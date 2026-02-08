@@ -1,0 +1,171 @@
+---
+---
+
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">研究项目</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-category">IEEE SMC 2025 (CCF-C)</div>
+          <h3 class="project-title">DPGNet: Dual Prior Guided Network for Surgical Instrument Segmentation</h3>
+        </div>
+        <div class="project-content">
+           <p class="project-description">
+             提出了一种双先验引导网络用于外科器械分割，创新性地结合了CNN与ViT架构的优势。
+             通过设计的Mamba增强适配器和多上下文引导解码器，有效利用了视觉基础模型(VFM)的先验知识，显著提升了分割精度。
+           </p>
+          <div class="project-tags">
+            <span class="tag">CNN</span>
+            <span class="tag">ViT</span>
+            <span class="tag">Mamba</span>
+            <span class="tag">SAM2</span>
+            <span class="tag">VFM</span>
+          </div>
+          <div class="project-achievement">
+            <span class="achievement-label">成果</span>
+            <span class="achievement-text">
+              在 Kvasir-Instrument 和 EndoVis2017 数据集上，mIoU分别提升4.2%和8.3%，达到SOTA性能
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <div class="project-category">CVIU (CCF-B)</div>
+          <h3 class="project-title">DGMCN: Depth-Guided Multi-modal Collaboration Network for Robust Polyp Segmentation in Endoscopic Images</h3>
+        </div>
+        <div class="project-content">
+           <p class="project-description">
+             开发了深度引导的多模态协作网络，用于内窥镜图像中的鲁棒息肉分割。
+             基于UNet架构进行改进，设计了DGMCN和DAMUNet模块来增强多模态特征提取和协作能力。
+           </p>
+          <div class="project-tags">
+            <span class="tag">UNet</span>
+            <span class="tag">Multi-modal</span>
+            <span class="tag">Polyp Segmentation</span>
+            <span class="tag">Endoscopic Images</span>
+          </div>
+          <div class="project-achievement">
+            <span class="achievement-label">成果</span>
+            <span class="achievement-text">
+              在 Kvasir-SEG 数据集上，mIoU提升8.5%，Dice提升6.7%
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding: 6rem 2rem;
+    background: #f8fafc;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 3rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-header {
+    padding: 2rem 2rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .project-category {
+    font-size: 0.875rem;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .project-content {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .project-description {
+    color: #4a4a4a;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tag {
+    padding: 0.375rem 0.75rem;
+    background: #e0e7ff;
+    color: #4338ca;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .project-achievement {
+    padding: 1rem;
+    background: #fef3c7;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+  }
+
+  .achievement-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #d97706;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .achievement-text {
+    font-size: 0.875rem;
+    color: #92400e;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

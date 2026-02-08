@@ -1,0 +1,166 @@
+---
+---
+
+<section id="education" class="education">
+  <div class="container">
+    <h2 class="section-title">教育背景</h2>
+    <div class="education-timeline">
+      <div class="education-item">
+        <div class="education-icon">🎓</div>
+        <div class="education-content">
+          <h3 class="education-degree">硕士研究生</h3>
+          <p class="education-school">（预计2026年9月入学）</p>
+          <p class="education-period">2026.09 - 2029.06</p>
+        </div>
+      </div>
+      
+       <div class="education-item">
+        <div class="education-icon">📚</div>
+        <div class="education-content">
+          <h3 class="education-degree">本科 · 国内211高校</h3>
+          <p class="education-school">计算机科学与技术专业</p>
+          <p class="education-period">2022.09 - 2026.06</p>
+          <div class="education-details">
+            <div class="detail-item">
+              <span class="detail-label">GPA</span>
+              <span class="detail-value highlight">4.56 / 5.0</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">专业排名</span>
+              <span class="detail-value highlight">前 1.25% (2/160)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">大学英语四级</span>
+              <span class="detail-value">582分</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">大学英语六级</span>
+              <span class="detail-value">499分</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .education {
+    padding: 6rem 2rem;
+    background: white;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 3rem;
+  }
+
+  .education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e5e7eb;
+  }
+
+  .education-item {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+  }
+
+  .education-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .education-icon {
+    position: absolute;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .education-content {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    flex: 1;
+  }
+
+  .education-degree {
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+  }
+
+  .education-school {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    margin-bottom: 0.25rem;
+  }
+
+  .education-period {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .education-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .detail-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .detail-value {
+    font-size: 0.875rem;
+    color: #1a1a2e;
+    font-weight: 600;
+  }
+
+  .highlight {
+    color: #667eea;
+  }
+
+  @media (max-width: 768px) {
+    .education-details {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
